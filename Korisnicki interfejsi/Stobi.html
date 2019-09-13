@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--jquery--->
+    <script>
+        $(document).ready(function() {
+            $("#Submit").click(function () {
+                var newId = $('.komentar-item').length + 1;
+                var textIme= $('#Ime').val();
+                var textIme2=$('<h5 class="mt-0 ml-1"></h5>').text(textIme);
+                var textKomenar=$('#KomentarInput').val();
+                var Komentar2=$('<p class="mb-4"></p>').text(textKomenar);
+                $(".komentari").append(textIme2);
+                $(".komentari").append(Komentar2);
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!-----------------Header---------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="Header">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Почетна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#opis">Стоби-Локалитет
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselExampleControls">Галерија</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mapa">Локација</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt" >
+                        Информации
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#komentar">Коментари</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!---body---->
+<div class="container">
+      <!-------------Opis----------------->
+    <div id="opis" class="text-center py-5 text-success mt-5">
+        <h3>Стоби</h3>
+        <p>
+            Историографските податоци и археолошките истражувања ни овозможуваат да
+            изградиме соодветна историска слика за континуитетот на живеење во Стоби
+            и настаните врзани за градот. Материјалните остатоци од архајскиот и класичниот
+            период, откриени со археолошките истражувања, најверојатно го определуваат
+            почетокот на живеењето во Стоби. Нивниот мал квантитет и недостатокот на пишани
+            извори не дозволуваат некакви поконкретни заклучоци околу карактерот на населбата
+            и нејзината големина.
+        </p>
+        <p>
+            Првите историографски податоци за Стоби ги среќаваме кај Тит Ливиј
+            (59 г. п.н.е – 17 г. н.е.) и тие нè информираат дека во 197 г. п.н.е
+            Филип V ги поразил Дарданците во близина на Стоби. Вториот податок зборува
+            дека реката Еригон (Црна) се влева во Аксиос (Вардар) кај „стариот град“ Стоби.
+            Третиот податок на Ливиј се однесува на римските освојувања во Македонија и 167
+            г. п.н.е. кога Стоби станува главен центар за трговија со сол во третата мерида.
+            Со археолошките истражувања се лоцирани утврдената населба и некрополата од
+            хеленистичко време со што е овозможено следење на континуитетот во развитокот
+            на градот.
+        </p>
+    </div>
+    <!--------------Sliki------------>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class=" d-block w-100" src="img/Stobi.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class=" d-block w-100" src="img/Street_remains_at_stobi.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class=" d-block w-100" src="img/Roman_city_ruins_Stobi_Macedonia.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-------------Mapa--------------------->
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.783776412747!2d21.97316251526407!3d41.552278693719906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13567bfb2b012c3f%3A0x62708ab14749c2b8!2z0KHRgtC-0LHQuA!5e0!3m2!1smk!2smk!4v1563351573526!5m2!1smk!2smk" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-----------Kontakt------------------->
+    <div id="kontakt" class="pt-5 rounded">
+        <div class="row">
+            <div class="col font-weight-bold ml-4">
+                <p class="">
+                    Работно време: Секој ден 08:00-20:00
+                </p>
+                <p class="mt-3">
+                    Телефон: +389 43 251 026
+                </p>
+                <p class="">
+                    <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
+                    <a href="http://www.stobi.mk/" class="btn btn-danger ml-2">Веб-сајт</a>
+                </p>
+            </div>
+            <div class="col font-weight-bold text-left">
+                <p> Цена на влезници</p>
+                <ul>
+                    <li>Возрасни- 120 ден.</li>
+                    <li>Деца, ученици и пензионери - 50 ден.</li>
+                    <li>Деца под 6 години и членови на ICOMOS - слободен влез</li>
+
+                </ul>
+                <p>Попусти</p>
+                <ul>
+                    <li>За возрасни - единечна влезница во групи поголеми од 10 лица - 100 ден.</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Form -->
+    <div id="komentar" class="mt-5">
+        <div class="input-group w-50">
+            <input type="text" id="Ime" class="form-control border-right-0 border-left-0 border-top-0"
+                   placeholder="Име"
+                   aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+        <form>
+            <div class="form-group w-75">
+                <input type="text" id="KomentarInput" class="form-control border-right-0 border-left-0 border-top-0"
+                       placeholder="Коментар" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button type="submit" id="Submit" class="btn btn-primary float-right mt-2media mb-4 komentar-item">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="komentari mt-5">
+        <!-- Single Comment -->
+        <h5 class="mt-0 ml-1">Commenter Name</h5>
+        <p class="mb-4">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+            sollicitudin. Cras
+            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    </div>
+
+
+
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

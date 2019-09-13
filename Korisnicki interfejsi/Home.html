@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style-home.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".telo").hide();
+            $("footer").hide();
+
+            $(".Show").click(function () {
+                $(".telo").show();
+                $("footer").show();
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+<header class="py-3 fixed-top bg-white border-bottom border-light">
+    <div class="container">
+        <a href="Home.html">
+        <img src="img/logo1.jpg" class="img-fluid">
+        </a>
+        <!-----Search---->
+        <div class="input-group w-25 float-right">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button class="btn btn-outline-success" type="button"><i class="fa fa-search"></i> </button>
+            </span>
+        </div>
+    </div>
+</header>
+<!-----Carousel---->
+<div id="Header" class="mt-4 py-5">
+    <p class="text-white text-center Header-text mb-0">Добредојдовте</p>
+    <p class="text-center text-white Header-text">во</p>
+</div>
+<div id="sliki" class="row">
+    <div id="stobi" class="col-3 pr-0 text-white text-center py-5">
+        Стоби
+    </div>
+    <div id="herakleја" class="col-3 pr-0 text-white text-center py-5">
+        Хераклеја
+    </div>
+    <div id="akvadukt" class="col-3 pr-0 text-white text-center py-5">
+        Аквадукт
+    </div>
+    <div id="skupi" class="col-3 pr-0 text-white text-center py-5">
+        Скупи
+    </div>
+</div>
+<div class="bg-gradient text-white text-center py-3">
+   <a  href="#" class="Show text-white text-decoration-none">И многу други
+       <i class="fa fa-arrow-circle-o-right"></i></a>
+</div>
+
+<div class="container telo">
+    <!------Body----->
+    <div class="body mt-3">
+
+        <!------Card1------>
+        <div class="row bg-light py-3">
+            <div class="col-4">
+                <img class="card-img-top" src="img/Stobi.jpg" alt="Card image cap">
+            </div>
+            <div class="col-8">
+                <h2 class="">Стоби</h2>
+                <p class="">Стоби — древен град кој со својот урбан дел се наоѓа на три тераси, што се спуштаат кон Црна Река, опкружени со ѕидови, а на устието меѓу Црна Река и Вардар. Археолошкиот локалитет Стоби е со површина од 1.600 квадратни метри.</p>
+                <p class="text-truncate">Познато е дека тука минувале главните патишта кои ги сврзувале областите на преден Дунав со средоземните земји, уште од предисторискиот период.</p>
+                <a href="Stobi.html" class="btn btn-outline-success">Прочитај повеќе </a>
+                <a href="Stobi.html#komentar" class="btn btn-outline-success ">Коментирај <i class="fa fa-comment"></i> </a>
+            </div>
+
+        </div>
+
+        <!------Card2------>
+        <div class="row bg-light py-3 my-2">
+            <div class="col-4">
+                <img class="card-img-top" src="img\Herakleja.jpg" alt="Card image cap">
+            </div>
+            <div class="col-8">
+                <h2 class="">Хераклеја</h2>
+                <p class="">Хераклеја Линкестис — градска населба од старомакедонско време до средниот век. Основана е кон средината на IV век пред н.е. од страна на кралот Филип II Македонски, како важен стратегиски пункт.</p>
+                <p class="text-truncate">Остатоците од материјалната култура од старомакедонската фаза на животот археолошки не се доволно истражени.</p>
+                <a href="Herakleja.html" class="btn btn-outline-success">Прочитај повеќе </a>
+                <a href="Herakleja.html#komentar" class="btn btn-outline-success ">Коментирај <i class="fa fa-comment"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!------Card3------>
+        <div class="row bg-light py-3">
+            <div class="col-4">
+                <img class="card-img-top" src="img\Akvadukt.jpg" alt="Card image cap">
+            </div>
+            <div class="col-8">
+                <h2 class="">Аквадукт</h2>
+                <p class="">Скопски аквадукт — аквадукт и археолошки локалитет кој се наоѓа кај Визбегово, во
+                    непосредна близина на градот Скопје. Датумот на неговата изградба до скоро не бил познат.</p>
+                <p class="text-truncate">Се сметало дека тој датира од времето на Римското царство или Византија.</p>
+                <a href="Akvadukt.html" class="btn btn-outline-success">Прочитај повеќе  </a>
+                <a href="Akvadukt.html#komentar"  class="btn btn-outline-success ">Коментирај <i
+                        class="fa fa-comment"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-------pagination----->
+        <div class="row justify-content-center">
+            <div class="btn-group justify-content-center my-5 " role="group" aria-label="group">
+                <button type="button" class="btn btn-outline-success disabled">Prev</button>
+                <button type="button" class="btn btn-outline-success active">1</button>
+                <button type="button" class="btn btn-outline-success">2</button>
+                <button type="button" class="btn btn-outline-success">3</button>
+                <button type="button" class="btn btn-outline-success">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+  <footer>
+<div class="text-center text-white bg-gradient ">Изработено од страна на Марија Ѓорѓиевска &copy;</div>
+  </footer>
+<!-- jQuery -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
